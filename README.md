@@ -1,29 +1,29 @@
-# stadia-maps-vue-3
+# Getting Started with Stadia Maps, Vue 3, and Leaflet
 
-This template should help get you started developing with Vue 3 in Vite.
+This project will get you started using [Stadia Maps](https://stadiamaps.com/) in your Vue application using
+[Vue Leaflet](https://github.com/vue-leaflet/vue-leaflet).
 
-## Recommended IDE Setup
+## Quickstart
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+This repository is organized into directories, one for each major plugin. Right now that's just Leaflet, so to get started:
 
-## Customize configuration
+```shell
+cd leaflet
+```
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Then it's nothing magical, just your usual npm sequence:
 
-## Project Setup
-
-```sh
+```shell
 npm install
+npm dev
 ```
 
-### Compile and Hot-Reload for Development
+Your browser should open automatically, showing a map of all video arcades in Japan, using OpenStreetMap
+data fetched using [this Overpass Turbo query](https://overpass-turbo.eu/s/1r4V) on Feb 7, 2023.
 
-```sh
-npm run dev
-```
+## Vector support
 
-### Compile and Minify for Production
+Coming soon! We will provides a vector example using the [MapLibre GL Leaflet](https://github.com/maplibre/maplibre-gl-leaflet)
+plugin. 
 
-```sh
-npm run build
-```
+![Markers over Japan](dark.png)
